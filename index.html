@@ -16,46 +16,48 @@
 </head>
 
 <body>
+    <audio autoplay="autoplay" loop="loop">
+    	<source src="bgm.mp3" type="audio/mp3">
+    </audio>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* We are both SJTUer ,</span><br />
+				<span class="space"/><span class="comments">* I'm a programmer so I write some code to show my love.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"lym"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"la"</span>);<br />
+				<span class="comments">// Dec. 5, 2015, I met you. </span><br />
+				i.met(u);<br />
+				<span class="comments">// Do not know that one day, u stole my heart away</span><br />
+				<span class="keyword">for</span> (<span class="keyword">int</span> day=<span class="string">"SOMEDAY"</span>;day<<span class="string">"FOREVER"</span>;day++){<br />
+				<span class="comments">// my love increase day by day</span><br />
+				<span class="placeholder"/>love++;<br />
+				}<br />
 				<span class="comments">// Since then, I miss u every day.</span><br />
 				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
+				<span class="comments">// Apr. 19,2016, I told you I love you.</span><br />
+				i.told(u);<br />
+				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
+				u.accept(i);<br /> 
+				<span class="comments">// it seems that i got the whole world.</span><br />
+				i.print(<span class="string">"hello world"</span>);<br /> 
+				<span class="comments">// i will take care of you carefully.</span><br />
 				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span class="comments">// i hope you can happy with me everyday.</span><br />
+				u.happy();<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						LA, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature">- lym</div>
 					</div>
 				</div>
 			</div>
@@ -69,7 +71,7 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
+		together.setFullYear(2016,3,19);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
